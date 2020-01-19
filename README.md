@@ -3,5 +3,7 @@ The key biological tasks of blood cancer (Acute Myeloid Leukemia) were investiga
 
 Keywords: Pareto Optimization, Multi-Objective Optimization, Biological Trade-Offs, Archetype Analysis, PrincipalConvex Hull Analysis, Tumor Biology, Clustering 
 
+
 Main script: CIP_List.py
+
 Methods Library: parti_lib.py
