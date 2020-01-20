@@ -13,6 +13,21 @@ Keywords: Pareto Optimization, Multi-Objective Optimization, Biological Trade-Of
 5.  Depict the spectrum of each archetype in Go-space.
 6.  Decay analysis with slope and p- value
 
+### Getting started
+
+```python
+import numpy as np
+from py_pcha import PCHA
+
+#%% Load data
+gene_data = pd.read_csv("FilepathToData/data.txt",delimiter= "\t")
+gene_data = gene_data.transpose()
+
+names = np.arange(0,160) #place holders to seperate gene_expr in GoData-Matrix
+GoData = pd.read_csv("FilepathToGoMatrix/GoMatrix.gmt",
+                     delimiter="\t", names = names)
+GoData = GoData.drop(columns = 1,axis = 1)
+```
 
 ### Archetype Analysis
  Archetype Depiction 
