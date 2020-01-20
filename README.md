@@ -21,11 +21,11 @@ Main script: CIP_List.py
 Methods Library: parti_lib.py
 
 ### Dependencies:
- [py_pchy](https://pypi.org/project/py-pcha/)
- [scikit-learn](https://scikit-learn.org/stable/)
- [Numpy](https://numpy.org/)
- [Scipy](https://www.scipy.org/)
- [Matplotlib](https://matplotlib.org/)
+ [py_pchy](https://pypi.org/project/py-pcha/), 
+ [scikit-learn](https://scikit-learn.org/stable/), 
+ [Numpy](https://numpy.org/), 
+ [Scipy](https://www.scipy.org/), 
+ [Matplotlib](https://matplotlib.org/), 
  [Pandas](https://pandas.pydata.org/)
  
  
