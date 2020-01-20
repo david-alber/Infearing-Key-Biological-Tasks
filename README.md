@@ -1,5 +1,5 @@
 # Infearing-Key-Biological-Tasks
-The key biological tasks of blood cancer (Acute Myeloid Leukemia) are investigated using an unsupervised machine learning model: A principal convex hull analysis (PCHA)[[1]] of the gene expressions of 451 patients revealed three main archetypes (A0, A1, A2) and hence three main biological specifications for this type of cancer: divert the immune system’s attentionaway from cancer cells (A0), cell proliferation (A1), evading apoptosis (A2).
+The key biological tasks of blood cancer (Acute Myeloid Leukemia) are investigated and analyzing with a multi objective optimization approach introduced in the framework of Archetypal Analysis (AA) by [[2]] and is current subject to research as in [[3]] and [[4]]. Here an unsupervised machine learning model, a principal convex hull analysis (PCHA)[[1]], is used to reveal the three main biological specifications for this type of cancer: divert the immune system’s attentionaway from cancer cells (A0), cell proliferation (A1), evading apoptosis (A2).
 
 
 Keywords: Pareto Optimization, Multi-Objective Optimization, Biological Trade-Offs, Archetype Analysis, PrincipalConvex Hull Analysis, Tumor Biology, Clustering 
@@ -44,7 +44,7 @@ Projection of the high dimensional gene- expression tumorsamples onto the first 
 :-------------------------:|:-------------------------:|:-------------------------:
  <img src="https://github.com/david-alber/Infearing-Key-Biological-Tasks/blob/master/Images/A1decay.png" width="320" height="300" />  |  <img src="https://github.com/david-alber/Infearing-Key-Biological-Tasks/blob/master/Images/A1decay.png" width="320" height="300" /> |  <img src="https://github.com/david-alber/Infearing-Key-Biological-Tasks/blob/master/Images/A2decay.png" width="320" height="300" />
 
-Selection of one GO- expression for each archetype, according to the maximal descent away from the archetype, i.e. most negativeslope for linear regression.  Suggesting thatBiocarta Blymphocyte Phathway,Reactome Unwinding of DNAandReactome EndosomalVacuolary Pathwaycan be linked to key biological tasks.
+Selection of one GO- expression for each archetype, according to the maximal descent away from the archetype, i.e. most negative slope for linear regression.  Suggesting that Biocarta Blymphocyte Phathway, Reactome Unwinding of DNA and Reactome Endosomal Vacuolary Pathwaycan be linked to key biological tasks.
 
 ### How to contribute
 Fork from the `Developer`- branch and pull request to merge back into the original `Developer`- branch. 
@@ -64,3 +64,7 @@ With:
  
  
  [1]:https://arxiv.org/abs/1901.10799
+ [2]:https://www.tandfonline.com/doi/abs/10.1080/00401706.1994.10485840
+ [3]:https://science.sciencemag.org/content/336/6085/1157/tab-article-info
+ [4]:https://www.nature.com/articles/nmeth.3254
+ [4]: 
