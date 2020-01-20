@@ -11,21 +11,24 @@ Keywords: Pareto Optimization, Multi-Objective Optimization, Biological Trade-Of
 4.  Find Archetypes in Gene_space using PCHA
 5.  Convert the Archetype coordinates from Gene- to Go- space
 5.  Depict the spectrum of each archetype in Go-space.
-6.  Decay analysis with slope and p- value
+6.  Conclude biological task: Decay analysis with slope and p- value
 
 ### Getting started
+GoMatrix is found in Data -> c2.cp.v4.0.symbols.gmt 
 
 ```python
 import numpy as np
+import pandas as pd 
+from parti_lib import *
 from py_pcha import PCHA
 
 #%% Load data
-gene_data = pd.read_csv("FilepathToData/data.txt",delimiter= "\t")
+gene_data = pd.read_csv("FilepathToData/GeneData.txt",delimiter= "\t")
 gene_data = gene_data.transpose()
 
 names = np.arange(0,160) #place holders to seperate gene_expr in GoData-Matrix
 GoData = pd.read_csv("FilepathToGoMatrix/GoMatrix.gmt",
-                     delimiter="\t", names = names)
+                     delimiter="\t", names = names) 
 GoData = GoData.drop(columns = 1,axis = 1)
 ```
 
@@ -43,9 +46,15 @@ Projection of the high dimensional gene- expression tumorsamples onto the first 
 
 Selection of one GO- expression for each archetype, according to the maximal descent away from the archetype, i.e. most negativeslope for linear regression.  Suggesting thatBiocarta Blymphocyte Phathway,Reactome Unwinding of DNAandReactome EndosomalVacuolary Pathwaycan be linked to key biological tasks.
 
+### How to contribute
+Fork from the `Developer`- branch and pull request to merge back into the original `Developer`- branch. 
+Working updates and improvements will then be merged into the `Master` branch, which will always contain the latest working version.
 
+With: 
+* [Lukas Alber](https://github.com/luksen99)
+* [Jean Hausser](https://www.scilifelab.se/researchers/jean-hausser/)
 
-### Dependencies:
+### Dependencies
  [py_pchy](https://pypi.org/project/py-pcha/), 
  [scikit-learn](https://scikit-learn.org/stable/), 
  [Numpy](https://numpy.org/), 
