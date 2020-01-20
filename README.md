@@ -14,11 +14,21 @@ Keywords: Pareto Optimization, Multi-Objective Optimization, Biological Trade-Of
 6.  Decay analysis with slope and p- value
 
 
+### Archetype Analysis
+ Archetype Depiction 
+:-------------------------:
+ <img src="https://github.com/david-alber/Infearing-Key-Biological-Tasks/blob/37decf4c2387de070ba6d8f462c58bfb2a01a366/Images/archePlot.png" width="320" height="300" />  
+ 
+Projection of the high dimensional gene- expression tumorsamples onto the first two principle components. The three vertexpoints/ archetypes highlighted correspond to distinct features andspan the triangle of the pareto front, such that all points within canbe explained as convex combinations of the vertices.
+
+### Biological Interpretation
+  A0 | A1 | A2  
+:-------------------------:|:-------------------------:|:-------------------------:
+ <img src="https://github.com/david-alber/Infearing-Key-Biological-Tasks/blob/37decf4c2387de070ba6d8f462c58bfb2a01a366/Images/archePlot.png" width="320" height="300" />  |  <img src="https://github.com/david-alber/Infearing-Key-Biological-Tasks/blob/37decf4c2387de070ba6d8f462c58bfb2a01a366/Images/A0decay.png" width="320" height="300" />
+
+Selection of one GO- expression for each archetype, according to the maximal descent away from the archetype, i.e. most negativeslope for linear regression.  Suggesting thatBiocarta Blymphocyte Phathway,Reactome Unwinding of DNAandReactome EndosomalVacuolary Pathwaycan be linked to key biological tasks.
 
 
-Main script: CIP_List.py
-
-Methods Library: parti_lib.py
 
 ### Dependencies:
  [py_pchy](https://pypi.org/project/py-pcha/), 
